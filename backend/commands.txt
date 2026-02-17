@@ -1,0 +1,17 @@
+CREATE VIRTUAL ENVIRONMENT
+py -3.11 -m venv .venv
+
+.venv\Scripts\Activate.ps1
+source .venv/bin/activate
+
+INTSALL DEPEDENCIES
+pip install -r requirements.txt
+
+
+/*RUN THE COMMAND*/
+uvicorn server:app --reload
+
+
+.\run.ps1
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
